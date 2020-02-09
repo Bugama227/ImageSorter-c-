@@ -1,0 +1,96 @@
+X:\Yandex.Disk\Курсач(Органайзер изображений)\Курсач\ImageSorter\bin\Debug\ImageSorter.exe.config
+X:\Yandex.Disk\Курсач(Органайзер изображений)\Курсач\ImageSorter\bin\Debug\ImageSorter.exe
+X:\Yandex.Disk\Курсач(Органайзер изображений)\Курсач\ImageSorter\bin\Debug\ImageSorter.pdb
+X:\Yandex.Disk\Курсач(Органайзер изображений)\Курсач\ImageSorter\obj\Debug\ImageSorter.csprojAssemblyReference.cache
+X:\Yandex.Disk\Курсач(Органайзер изображений)\Курсач\ImageSorter\obj\Debug\ImageSorter.Form1.resources
+X:\Yandex.Disk\Курсач(Органайзер изображений)\Курсач\ImageSorter\obj\Debug\ImageSorter.Properties.Resources.resources
+X:\Yandex.Disk\Курсач(Органайзер изображений)\Курсач\ImageSorter\obj\Debug\ImageSorter.csproj.GenerateResource.cache
+X:\Yandex.Disk\Курсач(Органайзер изображений)\Курсач\ImageSorter\obj\Debug\ImageSorter.exe
+X:\Yandex.Disk\Курсач(Органайзер изображений)\Курсач\ImageSorter\obj\Debug\ImageSorter.pdb
+E:\курсач\Самое последнее\ImageSorter\bin\Debug\ImageSorter.exe.config
+E:\курсач\Самое последнее\ImageSorter\bin\Debug\ImageSorter.exe
+E:\курсач\Самое последнее\ImageSorter\bin\Debug\ImageSorter.pdb
+E:\курсач\Самое последнее\ImageSorter\obj\Debug\ImageSorter.csprojAssemblyReference.cache
+E:\курсач\Самое последнее\ImageSorter\obj\Debug\ImageSorter.Form1.resources
+E:\курсач\Самое последнее\ImageSorter\obj\Debug\ImageSorter.Properties.Resources.resources
+E:\курсач\Самое последнее\ImageSorter\obj\Debug\ImageSorter.csproj.GenerateResource.cache
+E:\курсач\Самое последнее\ImageSorter\obj\Debug\ImageSorter.exe
+E:\курсач\Самое последнее\ImageSorter\obj\Debug\ImageSorter.pdb
+X:\Yandex.Disk\Курсач(Органайзер изображений)\Курсач\v2\ImageSorter\bin\Debug\ImageSorter.exe.config
+X:\Yandex.Disk\Курсач(Органайзер изображений)\Курсач\v2\ImageSorter\bin\Debug\ImageSorter.exe
+X:\Yandex.Disk\Курсач(Органайзер изображений)\Курсач\v2\ImageSorter\bin\Debug\ImageSorter.pdb
+X:\Yandex.Disk\Курсач(Органайзер изображений)\Курсач\v2\ImageSorter\obj\Debug\ImageSorter.csprojAssemblyReference.cache
+X:\Yandex.Disk\Курсач(Органайзер изображений)\Курсач\v2\ImageSorter\obj\Debug\ImageSorter.Form1.resources
+X:\Yandex.Disk\Курсач(Органайзер изображений)\Курсач\v2\ImageSorter\obj\Debug\ImageSorter.Properties.Resources.resources
+X:\Yandex.Disk\Курсач(Органайзер изображений)\Курсач\v2\ImageSorter\obj\Debug\ImageSorter.csproj.GenerateResource.cache
+X:\Yandex.Disk\Курсач(Органайзер изображений)\Курсач\v2\ImageSorter\obj\Debug\ImageSorter.exe
+X:\Yandex.Disk\Курсач(Органайзер изображений)\Курсач\v2\ImageSorter\obj\Debug\ImageSorter.pdb
+E:\курсач\Самое последнее\ImageSorter\obj\Debug\ImageSorter.Form2.resources
+X:\Yandex.Disk\Курсач(Органайзер изображений)\Курсач\v3\ImageSorter\obj\Debug\ImageSorter.csprojAssemblyReference.cache
+X:\Yandex.Disk\Курсач(Органайзер изображений)\Курсач\v3\ImageSorter\obj\Debug\ImageSorter.Form1.resources
+X:\Yandex.Disk\Курсач(Органайзер изображений)\Курсач\v3\ImageSorter\obj\Debug\ImageSorter.Form2.resources
+X:\Yandex.Disk\Курсач(Органайзер изображений)\Курсач\v3\ImageSorter\obj\Debug\ImageSorter.Properties.Resources.resources
+X:\Yandex.Disk\Курсач(Органайзер изображений)\Курсач\v3\ImageSorter\obj\Debug\ImageSorter.Form1.en-US.resources
+X:\Yandex.Disk\Курсач(Органайзер изображений)\Курсач\v3\ImageSorter\obj\Debug\ImageSorter.csproj.GenerateResource.cache
+X:\Yandex.Disk\Курсач(Органайзер изображений)\Курсач\v3\ImageSorter\obj\Debug\ImageSorter.exe
+X:\Yandex.Disk\Курсач(Органайзер изображений)\Курсач\v3\ImageSorter\obj\Debug\ImageSorter.pdb
+X:\Yandex.Disk\Курсач(Органайзер изображений)\Курсач\v3\ImageSorter\bin\Debug\ImageSorter.exe.config
+X:\Yandex.Disk\Курсач(Органайзер изображений)\Курсач\v3\ImageSorter\bin\Debug\ImageSorter.exe
+X:\Yandex.Disk\Курсач(Органайзер изображений)\Курсач\v3\ImageSorter\bin\Debug\ImageSorter.pdb
+X:\Yandex.Disk\Курсач(Органайзер изображений)\Курсач\v3\ImageSorter\bin\Debug\en-US\ImageSorter.resources.dll
+X:\Yandex.Disk\Курсач(Органайзер изображений)\Курсач\v3\ImageSorter\obj\Debug\en-US\ImageSorter.resources.dll
+X:\Yandex.Disk\Курсач(Органайзер изображений)\Курсач\v3\ImageSorter\obj\Debug\ImageSorter.Localization.resources
+X:\Yandex.Disk\Курсач(Органайзер изображений)\Курсач\v3\ImageSorter\obj\Debug\ImageSorter.Localization.en-US.resources
+X:\Yandex.Disk\Курсач(Органайзер изображений)\Курсач\v3\ImageSorter\obj\Debug\ImageSorter.Form3.resources
+X:\Yandex.Disk\Курсач(Органайзер изображений)\Курсач\v3\ImageSorter\obj\Debug\ImageSorter.Form3.en-US.resources
+E:\ImageSorter\bin\Debug\ImageSorter.exe.config
+E:\ImageSorter\bin\Debug\ImageSorter.exe
+E:\ImageSorter\bin\Debug\ImageSorter.pdb
+E:\ImageSorter\bin\Debug\en-US\ImageSorter.resources.dll
+E:\ImageSorter\obj\Debug\ImageSorter.csprojAssemblyReference.cache
+E:\ImageSorter\obj\Debug\ImageSorter.Form1.resources
+E:\ImageSorter\obj\Debug\ImageSorter.Form2.resources
+E:\ImageSorter\obj\Debug\ImageSorter.Form3.resources
+E:\ImageSorter\obj\Debug\ImageSorter.Properties.Resources.resources
+E:\ImageSorter\obj\Debug\ImageSorter.Localization.resources
+E:\ImageSorter\obj\Debug\ImageSorter.Form1.en-US.resources
+E:\ImageSorter\obj\Debug\ImageSorter.Form3.en-US.resources
+E:\ImageSorter\obj\Debug\ImageSorter.Localization.en-US.resources
+E:\ImageSorter\obj\Debug\ImageSorter.csproj.GenerateResource.cache
+E:\ImageSorter\obj\Debug\en-US\ImageSorter.resources.dll
+E:\ImageSorter\obj\Debug\ImageSorter.exe
+E:\ImageSorter\obj\Debug\ImageSorter.pdb
+H:\ImageSorter\bin\Debug\ImageSorter.exe.config
+H:\ImageSorter\bin\Debug\ImageSorter.exe
+H:\ImageSorter\bin\Debug\ImageSorter.pdb
+H:\ImageSorter\bin\Debug\en-US\ImageSorter.resources.dll
+H:\ImageSorter\obj\Debug\ImageSorter.csprojAssemblyReference.cache
+H:\ImageSorter\obj\Debug\ImageSorter.Form1.resources
+H:\ImageSorter\obj\Debug\ImageSorter.Form2.resources
+H:\ImageSorter\obj\Debug\ImageSorter.Form3.resources
+H:\ImageSorter\obj\Debug\ImageSorter.Properties.Resources.resources
+H:\ImageSorter\obj\Debug\ImageSorter.Localization.resources
+H:\ImageSorter\obj\Debug\ImageSorter.Form1.en-US.resources
+H:\ImageSorter\obj\Debug\ImageSorter.Form3.en-US.resources
+H:\ImageSorter\obj\Debug\ImageSorter.Localization.en-US.resources
+H:\ImageSorter\obj\Debug\ImageSorter.csproj.GenerateResource.cache
+H:\ImageSorter\obj\Debug\en-US\ImageSorter.resources.dll
+H:\ImageSorter\obj\Debug\ImageSorter.exe
+H:\ImageSorter\obj\Debug\ImageSorter.pdb
+X:\Yandex.Disk\Курсач(Органайзер изображений)\ImageSorter\bin\Debug\ImageSorter.exe.config
+X:\Yandex.Disk\Курсач(Органайзер изображений)\ImageSorter\bin\Debug\ImageSorter.exe
+X:\Yandex.Disk\Курсач(Органайзер изображений)\ImageSorter\bin\Debug\ImageSorter.pdb
+X:\Yandex.Disk\Курсач(Органайзер изображений)\ImageSorter\bin\Debug\en-US\ImageSorter.resources.dll
+X:\Yandex.Disk\Курсач(Органайзер изображений)\ImageSorter\obj\Debug\ImageSorter.csprojAssemblyReference.cache
+X:\Yandex.Disk\Курсач(Органайзер изображений)\ImageSorter\obj\Debug\ImageSorter.Form1.resources
+X:\Yandex.Disk\Курсач(Органайзер изображений)\ImageSorter\obj\Debug\ImageSorter.Form2.resources
+X:\Yandex.Disk\Курсач(Органайзер изображений)\ImageSorter\obj\Debug\ImageSorter.Form3.resources
+X:\Yandex.Disk\Курсач(Органайзер изображений)\ImageSorter\obj\Debug\ImageSorter.Properties.Resources.resources
+X:\Yandex.Disk\Курсач(Органайзер изображений)\ImageSorter\obj\Debug\ImageSorter.Localization.resources
+X:\Yandex.Disk\Курсач(Органайзер изображений)\ImageSorter\obj\Debug\ImageSorter.Form1.en-US.resources
+X:\Yandex.Disk\Курсач(Органайзер изображений)\ImageSorter\obj\Debug\ImageSorter.Form3.en-US.resources
+X:\Yandex.Disk\Курсач(Органайзер изображений)\ImageSorter\obj\Debug\ImageSorter.Localization.en-US.resources
+X:\Yandex.Disk\Курсач(Органайзер изображений)\ImageSorter\obj\Debug\ImageSorter.csproj.GenerateResource.cache
+X:\Yandex.Disk\Курсач(Органайзер изображений)\ImageSorter\obj\Debug\en-US\ImageSorter.resources.dll
+X:\Yandex.Disk\Курсач(Органайзер изображений)\ImageSorter\obj\Debug\ImageSorter.exe
+X:\Yandex.Disk\Курсач(Органайзер изображений)\ImageSorter\obj\Debug\ImageSorter.pdb
