@@ -54,13 +54,29 @@
             this.DeleteFolderButton = new System.Windows.Forms.Button();
             this.UpdateFolderButton = new System.Windows.Forms.Button();
             this.AddFolderButton = new System.Windows.Forms.Button();
+            this.DuplInterfaceSplitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.DuplImagesSplitContainer = new System.Windows.Forms.SplitContainer();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.DuplImagesListView = new System.Windows.Forms.ListView();
+            this.menuStrip2 = new System.Windows.Forms.MenuStrip();
+            this.удалитьЛевоеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.удалитьПравоеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.удалитьОбаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.отметитьКакОшибкуToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.отменаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.добавитьПапкуToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.запускToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.ProfileMenuStrip = new System.Windows.Forms.MenuStrip();
             this.LoadProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SaveProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.настройкиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             ((System.ComponentModel.ISupportInitialize)(this.MainSplitContainer)).BeginInit();
             this.MainSplitContainer.Panel1.SuspendLayout();
             this.MainSplitContainer.Panel2.SuspendLayout();
@@ -74,6 +90,19 @@
             this.OptionsSplitContainer.Panel1.SuspendLayout();
             this.OptionsSplitContainer.Panel2.SuspendLayout();
             this.OptionsSplitContainer.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DuplInterfaceSplitContainer1)).BeginInit();
+            this.DuplInterfaceSplitContainer1.Panel1.SuspendLayout();
+            this.DuplInterfaceSplitContainer1.Panel2.SuspendLayout();
+            this.DuplInterfaceSplitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DuplImagesSplitContainer)).BeginInit();
+            this.DuplImagesSplitContainer.Panel1.SuspendLayout();
+            this.DuplImagesSplitContainer.Panel2.SuspendLayout();
+            this.DuplImagesSplitContainer.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.menuStrip2.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.ProfileMenuStrip.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -303,11 +332,123 @@
             this.AddFolderButton.UseVisualStyleBackColor = true;
             this.AddFolderButton.Click += new System.EventHandler(this.AddFolderButton_Click);
             // 
+            // DuplInterfaceSplitContainer1
+            // 
+            this.DuplInterfaceSplitContainer1.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.DuplInterfaceSplitContainer1, "DuplInterfaceSplitContainer1");
+            this.DuplInterfaceSplitContainer1.Name = "DuplInterfaceSplitContainer1";
+            // 
+            // DuplInterfaceSplitContainer1.Panel1
+            // 
+            this.DuplInterfaceSplitContainer1.Panel1.Controls.Add(this.DuplImagesSplitContainer);
+            // 
+            // DuplInterfaceSplitContainer1.Panel2
+            // 
+            this.DuplInterfaceSplitContainer1.Panel2.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.DuplInterfaceSplitContainer1.Panel2.Controls.Add(this.DuplImagesListView);
+            this.DuplInterfaceSplitContainer1.Panel2.Controls.Add(this.menuStrip2);
+            // 
+            // DuplImagesSplitContainer
+            // 
+            resources.ApplyResources(this.DuplImagesSplitContainer, "DuplImagesSplitContainer");
+            this.DuplImagesSplitContainer.Name = "DuplImagesSplitContainer";
+            // 
+            // DuplImagesSplitContainer.Panel1
+            // 
+            this.DuplImagesSplitContainer.Panel1.BackColor = System.Drawing.Color.Maroon;
+            this.DuplImagesSplitContainer.Panel1.Controls.Add(this.pictureBox1);
+            // 
+            // DuplImagesSplitContainer.Panel2
+            // 
+            this.DuplImagesSplitContainer.Panel2.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.DuplImagesSplitContainer.Panel2.Controls.Add(this.pictureBox2);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.TabStop = false;
+            // 
+            // DuplImagesListView
+            // 
+            this.DuplImagesListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader6,
+            this.columnHeader7});
+            resources.ApplyResources(this.DuplImagesListView, "DuplImagesListView");
+            this.DuplImagesListView.HideSelection = false;
+            this.DuplImagesListView.Name = "DuplImagesListView";
+            this.DuplImagesListView.UseCompatibleStateImageBehavior = false;
+            this.DuplImagesListView.View = System.Windows.Forms.View.Details;
+            // 
+            // menuStrip2
+            // 
+            this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.удалитьЛевоеToolStripMenuItem,
+            this.удалитьПравоеToolStripMenuItem,
+            this.удалитьОбаToolStripMenuItem,
+            this.отметитьКакОшибкуToolStripMenuItem,
+            this.отменаToolStripMenuItem});
+            resources.ApplyResources(this.menuStrip2, "menuStrip2");
+            this.menuStrip2.Name = "menuStrip2";
+            // 
+            // удалитьЛевоеToolStripMenuItem
+            // 
+            this.удалитьЛевоеToolStripMenuItem.Name = "удалитьЛевоеToolStripMenuItem";
+            resources.ApplyResources(this.удалитьЛевоеToolStripMenuItem, "удалитьЛевоеToolStripMenuItem");
+            // 
+            // удалитьПравоеToolStripMenuItem
+            // 
+            this.удалитьПравоеToolStripMenuItem.Name = "удалитьПравоеToolStripMenuItem";
+            resources.ApplyResources(this.удалитьПравоеToolStripMenuItem, "удалитьПравоеToolStripMenuItem");
+            // 
+            // удалитьОбаToolStripMenuItem
+            // 
+            this.удалитьОбаToolStripMenuItem.Name = "удалитьОбаToolStripMenuItem";
+            resources.ApplyResources(this.удалитьОбаToolStripMenuItem, "удалитьОбаToolStripMenuItem");
+            // 
+            // отметитьКакОшибкуToolStripMenuItem
+            // 
+            this.отметитьКакОшибкуToolStripMenuItem.Name = "отметитьКакОшибкуToolStripMenuItem";
+            resources.ApplyResources(this.отметитьКакОшибкуToolStripMenuItem, "отметитьКакОшибкуToolStripMenuItem");
+            // 
+            // отменаToolStripMenuItem
+            // 
+            this.отменаToolStripMenuItem.Name = "отменаToolStripMenuItem";
+            resources.ApplyResources(this.отменаToolStripMenuItem, "отменаToolStripMenuItem");
+            // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.DuplInterfaceSplitContainer1);
+            this.tabPage2.Controls.Add(this.menuStrip1);
             resources.ApplyResources(this.tabPage2, "tabPage2");
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.добавитьПапкуToolStripMenuItem,
+            this.запускToolStripMenuItem});
+            resources.ApplyResources(this.menuStrip1, "menuStrip1");
+            this.menuStrip1.Name = "menuStrip1";
+            // 
+            // добавитьПапкуToolStripMenuItem
+            // 
+            this.добавитьПапкуToolStripMenuItem.Name = "добавитьПапкуToolStripMenuItem";
+            resources.ApplyResources(this.добавитьПапкуToolStripMenuItem, "добавитьПапкуToolStripMenuItem");
+            // 
+            // запускToolStripMenuItem
+            // 
+            this.запускToolStripMenuItem.Name = "запускToolStripMenuItem";
+            resources.ApplyResources(this.запускToolStripMenuItem, "запускToolStripMenuItem");
             // 
             // tabPage1
             // 
@@ -352,6 +493,14 @@
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             // 
+            // columnHeader6
+            // 
+            resources.ApplyResources(this.columnHeader6, "columnHeader6");
+            // 
+            // columnHeader7
+            // 
+            resources.ApplyResources(this.columnHeader7, "columnHeader7");
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
@@ -376,6 +525,23 @@
             this.OptionsSplitContainer.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.OptionsSplitContainer)).EndInit();
             this.OptionsSplitContainer.ResumeLayout(false);
+            this.DuplInterfaceSplitContainer1.Panel1.ResumeLayout(false);
+            this.DuplInterfaceSplitContainer1.Panel2.ResumeLayout(false);
+            this.DuplInterfaceSplitContainer1.Panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DuplInterfaceSplitContainer1)).EndInit();
+            this.DuplInterfaceSplitContainer1.ResumeLayout(false);
+            this.DuplImagesSplitContainer.Panel1.ResumeLayout(false);
+            this.DuplImagesSplitContainer.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DuplImagesSplitContainer)).EndInit();
+            this.DuplImagesSplitContainer.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.menuStrip2.ResumeLayout(false);
+            this.menuStrip2.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.ProfileMenuStrip.ResumeLayout(false);
@@ -419,6 +585,22 @@
         private System.Windows.Forms.ToolStripMenuItem SaveProfileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem настройкиToolStripMenuItem;
         private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.SplitContainer DuplInterfaceSplitContainer1;
+        private System.Windows.Forms.SplitContainer DuplImagesSplitContainer;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.ListView DuplImagesListView;
+        private System.Windows.Forms.MenuStrip menuStrip2;
+        private System.Windows.Forms.ToolStripMenuItem удалитьЛевоеToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem удалитьПравоеToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem удалитьОбаToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem отметитьКакОшибкуToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem отменаToolStripMenuItem;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem добавитьПапкуToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem запускToolStripMenuItem;
+        private System.Windows.Forms.ColumnHeader columnHeader6;
+        private System.Windows.Forms.ColumnHeader columnHeader7;
     }
 }
 

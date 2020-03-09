@@ -156,10 +156,49 @@
   <data name="AddFolderButton.Text" xml:space="preserve">
     <value>Add</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="удалитьЛевоеToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 20</value>
+  </data>
+  <data name="удалитьЛевоеToolStripMenuItem.Text" xml:space="preserve">
+    <value>Delete Left</value>
+  </data>
+  <data name="удалитьПравоеToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 20</value>
+  </data>
+  <data name="удалитьПравоеToolStripMenuItem.Text" xml:space="preserve">
+    <value>Delete Right</value>
+  </data>
+  <data name="удалитьОбаToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 20</value>
+  </data>
+  <data name="удалитьОбаToolStripMenuItem.Text" xml:space="preserve">
+    <value>Delete Both</value>
+  </data>
+  <data name="отметитьКакОшибкуToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 20</value>
+  </data>
+  <data name="отметитьКакОшибкуToolStripMenuItem.Text" xml:space="preserve">
+    <value>Mark As False-Positive</value>
+  </data>
+  <data name="отменаToolStripMenuItem.Text" xml:space="preserve">
+    <value>Retrieve</value>
+  </data>
+  <data name="добавитьПапкуToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 20</value>
+  </data>
+  <data name="добавитьПапкуToolStripMenuItem.Text" xml:space="preserve">
+    <value>Add Folder</value>
+  </data>
+  <data name="запускToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 20</value>
+  </data>
+  <data name="запускToolStripMenuItem.Text" xml:space="preserve">
+    <value>Launch</value>
+  </data>
   <data name="tabPage2.Text" xml:space="preserve">
     <value>Duplicate search</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="LoadProfileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>82, 20</value>
   </data>

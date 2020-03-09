@@ -316,6 +316,11 @@ namespace ImageSorter
                 MainSplitContainer.SplitterDistance = ClientSize.Width - 280;
                 OptionsSplitContainer.SplitterDistance = ClientSize.Width - 200;
                 ImageSplitContainer.SplitterDistance = ClientSize.Height - 200;
+
+                DuplImagesSplitContainer.SplitterDistance = ClientSize.Width / 2;
+                DuplInterfaceSplitContainer1.SplitterDistance = ClientSize.Height - ClientSize.Height / 3;
+
+                DuplImagesListView.Columns[0].Width = ClientSize.Width / 2;
             }
         }
 

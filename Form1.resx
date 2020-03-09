@@ -252,24 +252,6 @@
   <data name="ImageSplitContainer.Panel1MinSize" type="System.Int32, mscorlib">
     <value>300</value>
   </data>
-  <data name="columnHeader3.Text" xml:space="preserve">
-    <value>Название</value>
-  </data>
-  <data name="columnHeader3.Width" type="System.Int32, mscorlib">
-    <value>140</value>
-  </data>
-  <data name="columnHeader4.Text" xml:space="preserve">
-    <value>Путь</value>
-  </data>
-  <data name="columnHeader4.Width" type="System.Int32, mscorlib">
-    <value>250</value>
-  </data>
-  <data name="columnHeader5.Text" xml:space="preserve">
-    <value>Горячая Клавиша</value>
-  </data>
-  <data name="columnHeader5.Width" type="System.Int32, mscorlib">
-    <value>104</value>
-  </data>
   <data name="FolderListView.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -422,18 +404,6 @@
   </data>
   <data name="ImagePropertiesListView.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="columnHeader1.Text" xml:space="preserve">
-    <value>Название</value>
-  </data>
-  <data name="columnHeader1.Width" type="System.Int32, mscorlib">
-    <value>90</value>
-  </data>
-  <data name="columnHeader2.Text" xml:space="preserve">
-    <value>Значение</value>
-  </data>
-  <data name="columnHeader2.Width" type="System.Int32, mscorlib">
-    <value>170</value>
   </data>
   <data name="ImagePropertiesListView.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -831,6 +801,315 @@
   <data name="&gt;&gt;MainSplitContainer.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="columnHeader3.Text" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="columnHeader3.Width" type="System.Int32, mscorlib">
+    <value>140</value>
+  </data>
+  <data name="columnHeader4.Text" xml:space="preserve">
+    <value>Путь</value>
+  </data>
+  <data name="columnHeader4.Width" type="System.Int32, mscorlib">
+    <value>250</value>
+  </data>
+  <data name="columnHeader5.Text" xml:space="preserve">
+    <value>Горячая Клавиша</value>
+  </data>
+  <data name="columnHeader5.Width" type="System.Int32, mscorlib">
+    <value>104</value>
+  </data>
+  <data name="columnHeader1.Text" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="columnHeader1.Width" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="columnHeader2.Text" xml:space="preserve">
+    <value>Значение</value>
+  </data>
+  <data name="columnHeader2.Width" type="System.Int32, mscorlib">
+    <value>170</value>
+  </data>
+  <data name="DuplInterfaceSplitContainer1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="DuplInterfaceSplitContainer1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 27</value>
+  </data>
+  <data name="DuplInterfaceSplitContainer1.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="DuplImagesSplitContainer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="DuplImagesSplitContainer.IsSplitterFixed" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="DuplImagesSplitContainer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pictureBox1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>394, 301</value>
+  </data>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>DuplImagesSplitContainer.Panel1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;DuplImagesSplitContainer.Panel1.Name" xml:space="preserve">
+    <value>DuplImagesSplitContainer.Panel1</value>
+  </data>
+  <data name="&gt;&gt;DuplImagesSplitContainer.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DuplImagesSplitContainer.Panel1.Parent" xml:space="preserve">
+    <value>DuplImagesSplitContainer</value>
+  </data>
+  <data name="&gt;&gt;DuplImagesSplitContainer.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pictureBox2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pictureBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>372, 301</value>
+  </data>
+  <data name="pictureBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.Name" xml:space="preserve">
+    <value>pictureBox2</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.Parent" xml:space="preserve">
+    <value>DuplImagesSplitContainer.Panel2</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;DuplImagesSplitContainer.Panel2.Name" xml:space="preserve">
+    <value>DuplImagesSplitContainer.Panel2</value>
+  </data>
+  <data name="&gt;&gt;DuplImagesSplitContainer.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DuplImagesSplitContainer.Panel2.Parent" xml:space="preserve">
+    <value>DuplImagesSplitContainer</value>
+  </data>
+  <data name="&gt;&gt;DuplImagesSplitContainer.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="DuplImagesSplitContainer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>770, 301</value>
+  </data>
+  <data name="DuplImagesSplitContainer.SplitterDistance" type="System.Int32, mscorlib">
+    <value>394</value>
+  </data>
+  <data name="DuplImagesSplitContainer.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;DuplImagesSplitContainer.Name" xml:space="preserve">
+    <value>DuplImagesSplitContainer</value>
+  </data>
+  <data name="&gt;&gt;DuplImagesSplitContainer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DuplImagesSplitContainer.Parent" xml:space="preserve">
+    <value>DuplInterfaceSplitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;DuplImagesSplitContainer.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;DuplInterfaceSplitContainer1.Panel1.Name" xml:space="preserve">
+    <value>DuplInterfaceSplitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;DuplInterfaceSplitContainer1.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DuplInterfaceSplitContainer1.Panel1.Parent" xml:space="preserve">
+    <value>DuplInterfaceSplitContainer1</value>
+  </data>
+  <data name="&gt;&gt;DuplInterfaceSplitContainer1.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="columnHeader6.Text" xml:space="preserve">
+    <value>Левое Изображение</value>
+  </data>
+  <data name="columnHeader6.Width" type="System.Int32, mscorlib">
+    <value>396</value>
+  </data>
+  <data name="columnHeader7.Text" xml:space="preserve">
+    <value>Правое Изображение</value>
+  </data>
+  <data name="columnHeader7.Width" type="System.Int32, mscorlib">
+    <value>370</value>
+  </data>
+  <data name="DuplImagesListView.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="DuplImagesListView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 24</value>
+  </data>
+  <data name="DuplImagesListView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>770, 176</value>
+  </data>
+  <data name="DuplImagesListView.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;DuplImagesListView.Name" xml:space="preserve">
+    <value>DuplImagesListView</value>
+  </data>
+  <data name="&gt;&gt;DuplImagesListView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DuplImagesListView.Parent" xml:space="preserve">
+    <value>DuplInterfaceSplitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;DuplImagesListView.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="menuStrip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>275, 17</value>
+  </metadata>
+  <data name="menuStrip2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="menuStrip2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>770, 24</value>
+  </data>
+  <data name="menuStrip2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="menuStrip2.Text" xml:space="preserve">
+    <value>menuStrip2</value>
+  </data>
+  <data name="&gt;&gt;menuStrip2.Name" xml:space="preserve">
+    <value>menuStrip2</value>
+  </data>
+  <data name="&gt;&gt;menuStrip2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuStrip2.Parent" xml:space="preserve">
+    <value>DuplInterfaceSplitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;menuStrip2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;DuplInterfaceSplitContainer1.Panel2.Name" xml:space="preserve">
+    <value>DuplInterfaceSplitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;DuplInterfaceSplitContainer1.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DuplInterfaceSplitContainer1.Panel2.Parent" xml:space="preserve">
+    <value>DuplInterfaceSplitContainer1</value>
+  </data>
+  <data name="&gt;&gt;DuplInterfaceSplitContainer1.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="DuplInterfaceSplitContainer1.Panel2MinSize" type="System.Int32, mscorlib">
+    <value>200</value>
+  </data>
+  <data name="DuplInterfaceSplitContainer1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>770, 505</value>
+  </data>
+  <data name="DuplInterfaceSplitContainer1.SplitterDistance" type="System.Int32, mscorlib">
+    <value>301</value>
+  </data>
+  <data name="DuplInterfaceSplitContainer1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;DuplInterfaceSplitContainer1.Name" xml:space="preserve">
+    <value>DuplInterfaceSplitContainer1</value>
+  </data>
+  <data name="&gt;&gt;DuplInterfaceSplitContainer1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DuplInterfaceSplitContainer1.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;DuplInterfaceSplitContainer1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="удалитьЛевоеToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 20</value>
+  </data>
+  <data name="удалитьЛевоеToolStripMenuItem.Text" xml:space="preserve">
+    <value>Удалить Левое</value>
+  </data>
+  <data name="удалитьПравоеToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 20</value>
+  </data>
+  <data name="удалитьПравоеToolStripMenuItem.Text" xml:space="preserve">
+    <value>Удалить Правое</value>
+  </data>
+  <data name="удалитьОбаToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 20</value>
+  </data>
+  <data name="удалитьОбаToolStripMenuItem.Text" xml:space="preserve">
+    <value>Удалить Оба</value>
+  </data>
+  <data name="отметитьКакОшибкуToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 20</value>
+  </data>
+  <data name="отметитьКакОшибкуToolStripMenuItem.Text" xml:space="preserve">
+    <value>Отметить Как Ошибку</value>
+  </data>
+  <data name="отменаToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 20</value>
+  </data>
+  <data name="отменаToolStripMenuItem.Text" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>160, 17</value>
+  </metadata>
+  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>770, 24</value>
+  </data>
+  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="menuStrip1.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
   </data>
@@ -858,39 +1137,21 @@
   <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="добавитьПапкуToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 20</value>
+  </data>
+  <data name="добавитьПапкуToolStripMenuItem.Text" xml:space="preserve">
+    <value>Добавить папку</value>
+  </data>
+  <data name="запускToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 20</value>
+  </data>
+  <data name="запускToolStripMenuItem.Text" xml:space="preserve">
+    <value>Запуск</value>
+  </data>
   <metadata name="ProfileMenuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <data name="LoadProfileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 20</value>
-  </data>
-  <data name="LoadProfileToolStripMenuItem.Text" xml:space="preserve">
-    <value>Загрузить профиль</value>
-  </data>
-  <data name="SaveProfileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 20</value>
-  </data>
-  <data name="SaveProfileToolStripMenuItem.Text" xml:space="preserve">
-    <value>Сохранить профиль</value>
-  </data>
-  <data name="настройкиToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 20</value>
-  </data>
-  <data name="настройкиToolStripMenuItem.Text" xml:space="preserve">
-    <value>Настройки</value>
-  </data>
-  <data name="ProfileMenuStrip.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="ProfileMenuStrip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>770, 24</value>
-  </data>
-  <data name="ProfileMenuStrip.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="ProfileMenuStrip.Text" xml:space="preserve">
-    <value>menuStrip1</value>
-  </data>
   <data name="&gt;&gt;ProfileMenuStrip.Name" xml:space="preserve">
     <value>ProfileMenuStrip</value>
   </data>
@@ -929,6 +1190,51 @@
   </data>
   <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <metadata name="ProfileMenuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="ProfileMenuStrip.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="ProfileMenuStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>770, 24</value>
+  </data>
+  <data name="ProfileMenuStrip.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ProfileMenuStrip.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;ProfileMenuStrip.Name" xml:space="preserve">
+    <value>ProfileMenuStrip</value>
+  </data>
+  <data name="&gt;&gt;ProfileMenuStrip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ProfileMenuStrip.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;ProfileMenuStrip.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="LoadProfileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 20</value>
+  </data>
+  <data name="LoadProfileToolStripMenuItem.Text" xml:space="preserve">
+    <value>Загрузить профиль</value>
+  </data>
+  <data name="SaveProfileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 20</value>
+  </data>
+  <data name="SaveProfileToolStripMenuItem.Text" xml:space="preserve">
+    <value>Сохранить профиль</value>
+  </data>
+  <data name="настройкиToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 20</value>
+  </data>
+  <data name="настройкиToolStripMenuItem.Text" xml:space="preserve">
+    <value>Настройки</value>
   </data>
   <data name="tabControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -999,6 +1305,48 @@
   <data name="&gt;&gt;columnHeader2.Type" xml:space="preserve">
     <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;удалитьЛевоеToolStripMenuItem.Name" xml:space="preserve">
+    <value>удалитьЛевоеToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;удалитьЛевоеToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;удалитьПравоеToolStripMenuItem.Name" xml:space="preserve">
+    <value>удалитьПравоеToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;удалитьПравоеToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;удалитьОбаToolStripMenuItem.Name" xml:space="preserve">
+    <value>удалитьОбаToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;удалитьОбаToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;отметитьКакОшибкуToolStripMenuItem.Name" xml:space="preserve">
+    <value>отметитьКакОшибкуToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;отметитьКакОшибкуToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;отменаToolStripMenuItem.Name" xml:space="preserve">
+    <value>отменаToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;отменаToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;добавитьПапкуToolStripMenuItem.Name" xml:space="preserve">
+    <value>добавитьПапкуToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;добавитьПапкуToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;запускToolStripMenuItem.Name" xml:space="preserve">
+    <value>запускToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;запускToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;LoadProfileToolStripMenuItem.Name" xml:space="preserve">
     <value>LoadProfileToolStripMenuItem</value>
   </data>
@@ -1016,6 +1364,18 @@
   </data>
   <data name="&gt;&gt;настройкиToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;columnHeader6.Name" xml:space="preserve">
+    <value>columnHeader6</value>
+  </data>
+  <data name="&gt;&gt;columnHeader6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;columnHeader7.Name" xml:space="preserve">
+    <value>columnHeader7</value>
+  </data>
+  <data name="&gt;&gt;columnHeader7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Form1</value>
