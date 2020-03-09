@@ -8,6 +8,8 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 // Program made to simplify sorting images in directory. Random image appear on a screen.
 // Afterwards you can move it to one of a several directories using hotkeys or double click on a list.
@@ -15,15 +17,36 @@ using System.Windows.Forms;
 // Or user can click SKIP to make a new folder inside directory with images and move shown image there.
 // While image on a screen, user can find some of it's properties such as: name, size(width, height),
 //  size(weight(kb,mb)), path to image location, extension, exif(TBA)
+
+
+//TODO
+//HotKeys on DeleteButtons, use arrow keys to choose LV item
 namespace ImageSorter
 {
+    enum RemoveCase
+    {
+        Left = 0,
+        Right = 1,
+        Both = 10,
+        FalsePositive = 11
+    };
+
     public partial class Form1 : Form
     {
+        //Global variables for ImageSorter
         public string PictureFolderLocation = ""; // created to hold path of chosen picture directory
         public ToolTip toolTip1 = new ToolTip(); // created to hold path of chosen goal directory
         //and actually i don't know where i can dispose that. I'm really sorry that your memory was corrupted
         public List<string> ImagesPaths = new List<string>(); // holds paths of images inside chosen directory
         private string CurrentPath;
+        //Global variables for ImageComparer
+        public string[] Paths;
+        public string FolderPath;
+        public Dictionary<string, string[]> LightHashes = new Dictionary<string, string[]>();
+        public Dictionary<string, string[]> DarkHashes = new Dictionary<string, string[]>();
+        public Dictionary<string, string> Matches = new Dictionary<string, string>();
+        public Dictionary<string, string> TempOfRemoved = new Dictionary<string, string>();
+        private bool isChecked = false;
 
         public Form1()
         {
@@ -318,7 +341,7 @@ namespace ImageSorter
                 ImageSplitContainer.SplitterDistance = ClientSize.Height - 200;
 
                 DuplImagesSplitContainer.SplitterDistance = ClientSize.Width / 2;
-                DuplInterfaceSplitContainer1.SplitterDistance = ClientSize.Height - ClientSize.Height / 3;
+                DuplInterfaceSplitContainer.SplitterDistance = ClientSize.Height - ClientSize.Height / 3;
 
                 DuplImagesListView.Columns[0].Width = ClientSize.Width / 2;
             }
@@ -665,5 +688,182 @@ namespace ImageSorter
             if (Properties.Settings.Default.LanguageChanged == "changed")
                 InitializeComponent();
         }
+
+        //// Comparing funcs
+        ///
+
+        private void ClearTemp()
+        {
+            this.MakeStuffToolStripMenuItem.Enabled = true;
+            this.ToggleButtons(false);
+
+            FoldingHelpers.DeleteTempFolder(FolderPath);
+            this.FolderPath = "";
+            this.isChecked = false;
+
+            this.LeftDuplPictureBox.Image = null;
+            this.RightDuplPictureBox.Image = null;
+            this.DuplImagesListView.Items.Clear();
+
+            this.LightHashes.Clear();
+            this.DarkHashes.Clear();
+            this.Matches.Clear();
+        }
+
+        private Task<string> SetMatchesIntoLV()
+        {
+            return Task.Run(() =>
+            {
+                this.BeginInvoke((ThreadStart)delegate ()
+                {
+                    this.DuplImagesListView.BeginUpdate();
+                });
+
+                Parallel.For(0, Matches.Count, i =>
+                {
+                    this.BeginInvoke((ThreadStart)delegate ()
+                    {
+                        this.DuplImagesListView.Items.Add(new ListViewItem(new[] { Matches.ElementAt(i).Key, Matches.ElementAt(i).Value }));
+                    });
+                });
+
+                this.BeginInvoke((ThreadStart)delegate ()
+                {
+                    this.DuplImagesListView.EndUpdate();
+                });
+
+                ToggleButtons(true);
+
+                return this.DuplImagesListView.Items.Count.ToString();
+            });
+        }
+
+        private void RemoveMatchFromLV(RemoveCase removeCase)
+        {
+            if (this.DuplImagesListView.Items.Count == 0 || this.DuplImagesListView.SelectedItems.Count == 0) return;
+
+            FoldingHelpers.CheckTemp(this.FolderPath, this.TempOfRemoved);
+
+            string leftMatch = DuplImagesListView.SelectedItems[0].SubItems[0].Text;
+            string rightMatch = DuplImagesListView.SelectedItems[0].SubItems[1].Text;
+
+            this.LeftDuplPictureBox.Image = null;
+            this.RightDuplPictureBox.Image = null;
+            this.DuplImagesListView.SelectedItems[0].Remove();
+
+            FoldingHelpers.RemoveSelectedFiles(removeCase, this.FolderPath, leftMatch, rightMatch);
+
+            this.TempOfRemoved.Add(leftMatch, rightMatch);
+        }
+
+        private void ToggleButtons(bool state)
+        {
+            this.BeginInvoke((ThreadStart)delegate ()
+            {
+                this.RetrieveToolStripMenuItem.Enabled = state;
+                this.DeleteLeftToolStripMenuItem.Enabled = state;
+                this.DeleteRightToolStripMenuItem.Enabled = state;
+                this.DeleteBothToolStripMenuItem.Enabled = state;
+                this.FalsePositiveToolStripMenuItem.Enabled = state;
+            });
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            FoldingHelpers.DeleteTempFolder(this.FolderPath);
+        }
+
+        async private void LoadButton_Click(object sender, EventArgs e)
+        {
+            FolderBrowserDialog fbd = new FolderBrowserDialog();
+
+            if (fbd.ShowDialog() == DialogResult.OK)
+            {
+                ClearTemp();
+                this.FolderPath = fbd.SelectedPath;
+                this.Paths = await CompareHelpers.GetAllImagesPaths(fbd.SelectedPath);
+            }
+            fbd.Dispose();
+        }
+
+        async private void MakeStuffButton_Click(object sender, EventArgs e)
+        {
+            if (this.isChecked) return;
+
+            this.MakeStuffToolStripMenuItem.Enabled = false;
+            this.isChecked = true;
+
+            (this.DarkHashes, this.LightHashes) = await CompareHelpers.SetFingerPrintsIntoDictionary(Paths);
+            this.Paths = null;
+
+            await CompareHelpers.CompareFingerPrints(this.LightHashes, this.Matches);
+            await CompareHelpers.CompareFingerPrints(this.DarkHashes, this.Matches);
+
+            this.BeginInvoke((ThreadStart)async delegate ()
+            {
+                this.ResultLabel.Text = await this.SetMatchesIntoLV();
+            });
+        }
+
+        private void DuplImagesListView_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (this.DuplImagesListView.Items.Count == 0) return;
+
+            string LeftMatch = this.DuplImagesListView.SelectedItems[0].SubItems[0].Text;
+            string RightMatch = this.DuplImagesListView.SelectedItems[0].SubItems[1].Text;
+
+            this.LeftDuplPictureBox.Image = null;
+            this.RightDuplPictureBox.Image = null;
+
+            this.LeftDuplPictureBox.ImageLocation = $"{this.FolderPath}\\{LeftMatch}";
+            this.RightDuplPictureBox.ImageLocation = $"{this.FolderPath}\\{RightMatch}";
+        }
+
+        private void DeleteLeftButton_Click(object sender, EventArgs e)
+        {
+            this.RemoveMatchFromLV(RemoveCase.Left);
+        }
+
+        private void DeleteRightButton_Click(object sender, EventArgs e)
+        {
+            this.RemoveMatchFromLV(RemoveCase.Right);
+        }
+
+        private void DeleteBothButton_Click(object sender, EventArgs e)
+        {
+            this.RemoveMatchFromLV(RemoveCase.Both);
+        }
+
+        private void FalsePositiveButton_Click(object sender, EventArgs e)
+        {
+            this.RemoveMatchFromLV(RemoveCase.FalsePositive);
+        }
+
+        private void RetrieveButton_Click(object sender, EventArgs e)
+        {
+            if (this.TempOfRemoved.Count > 0)
+            {
+                string leftMatch = this.TempOfRemoved.Keys.Last();
+                string rightMatch = this.TempOfRemoved.Values.Last();
+
+                this.DuplImagesListView.Items.Add(new ListViewItem(new[] { leftMatch, rightMatch }));
+
+                FoldingHelpers.MoveIfExists($"{this.FolderPath}\\TempFolder\\{leftMatch}", $"{this.FolderPath}\\{leftMatch}");
+                FoldingHelpers.MoveIfExists($"{this.FolderPath}\\TempFolder\\{rightMatch}", $"{this.FolderPath}\\{rightMatch}");
+
+                this.TempOfRemoved.Remove(this.TempOfRemoved.Keys.Last());
+            }
+        }
+
+        ///
+        //// Comparing funcs ends here
+    }
+
+    class Constants
+    {
+        public const int DIMENSION_SCALE = 32;
+        public const int REDUCED_IMAGE_SCALE = 16;
+        public const int TEMP_AMOUNT = 3;
+
     }
 }

@@ -54,29 +54,30 @@
             this.DeleteFolderButton = new System.Windows.Forms.Button();
             this.UpdateFolderButton = new System.Windows.Forms.Button();
             this.AddFolderButton = new System.Windows.Forms.Button();
-            this.DuplInterfaceSplitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.DuplInterfaceSplitContainer = new System.Windows.Forms.SplitContainer();
             this.DuplImagesSplitContainer = new System.Windows.Forms.SplitContainer();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.LeftDuplPictureBox = new System.Windows.Forms.PictureBox();
+            this.RightDuplPictureBox = new System.Windows.Forms.PictureBox();
+            this.ResultLabel = new System.Windows.Forms.Label();
             this.DuplImagesListView = new System.Windows.Forms.ListView();
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
-            this.удалитьЛевоеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.удалитьПравоеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.удалитьОбаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.отметитьКакОшибкуToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.отменаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.DeleteLeftToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.DeleteRightToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.DeleteBothToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.FalsePositiveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.RetrieveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.добавитьПапкуToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.запускToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.AddFolderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MakeStuffToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.ProfileMenuStrip = new System.Windows.Forms.MenuStrip();
             this.LoadProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SaveProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.настройкиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             ((System.ComponentModel.ISupportInitialize)(this.MainSplitContainer)).BeginInit();
             this.MainSplitContainer.Panel1.SuspendLayout();
             this.MainSplitContainer.Panel2.SuspendLayout();
@@ -90,16 +91,16 @@
             this.OptionsSplitContainer.Panel1.SuspendLayout();
             this.OptionsSplitContainer.Panel2.SuspendLayout();
             this.OptionsSplitContainer.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DuplInterfaceSplitContainer1)).BeginInit();
-            this.DuplInterfaceSplitContainer1.Panel1.SuspendLayout();
-            this.DuplInterfaceSplitContainer1.Panel2.SuspendLayout();
-            this.DuplInterfaceSplitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DuplInterfaceSplitContainer)).BeginInit();
+            this.DuplInterfaceSplitContainer.Panel1.SuspendLayout();
+            this.DuplInterfaceSplitContainer.Panel2.SuspendLayout();
+            this.DuplInterfaceSplitContainer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DuplImagesSplitContainer)).BeginInit();
             this.DuplImagesSplitContainer.Panel1.SuspendLayout();
             this.DuplImagesSplitContainer.Panel2.SuspendLayout();
             this.DuplImagesSplitContainer.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LeftDuplPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RightDuplPictureBox)).BeginInit();
             this.menuStrip2.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -332,21 +333,22 @@
             this.AddFolderButton.UseVisualStyleBackColor = true;
             this.AddFolderButton.Click += new System.EventHandler(this.AddFolderButton_Click);
             // 
-            // DuplInterfaceSplitContainer1
+            // DuplInterfaceSplitContainer
             // 
-            this.DuplInterfaceSplitContainer1.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.DuplInterfaceSplitContainer1, "DuplInterfaceSplitContainer1");
-            this.DuplInterfaceSplitContainer1.Name = "DuplInterfaceSplitContainer1";
+            this.DuplInterfaceSplitContainer.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.DuplInterfaceSplitContainer, "DuplInterfaceSplitContainer");
+            this.DuplInterfaceSplitContainer.Name = "DuplInterfaceSplitContainer";
             // 
-            // DuplInterfaceSplitContainer1.Panel1
+            // DuplInterfaceSplitContainer.Panel1
             // 
-            this.DuplInterfaceSplitContainer1.Panel1.Controls.Add(this.DuplImagesSplitContainer);
+            this.DuplInterfaceSplitContainer.Panel1.Controls.Add(this.DuplImagesSplitContainer);
             // 
-            // DuplInterfaceSplitContainer1.Panel2
+            // DuplInterfaceSplitContainer.Panel2
             // 
-            this.DuplInterfaceSplitContainer1.Panel2.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.DuplInterfaceSplitContainer1.Panel2.Controls.Add(this.DuplImagesListView);
-            this.DuplInterfaceSplitContainer1.Panel2.Controls.Add(this.menuStrip2);
+            this.DuplInterfaceSplitContainer.Panel2.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.DuplInterfaceSplitContainer.Panel2.Controls.Add(this.ResultLabel);
+            this.DuplInterfaceSplitContainer.Panel2.Controls.Add(this.DuplImagesListView);
+            this.DuplInterfaceSplitContainer.Panel2.Controls.Add(this.menuStrip2);
             // 
             // DuplImagesSplitContainer
             // 
@@ -356,26 +358,32 @@
             // DuplImagesSplitContainer.Panel1
             // 
             this.DuplImagesSplitContainer.Panel1.BackColor = System.Drawing.Color.Maroon;
-            this.DuplImagesSplitContainer.Panel1.Controls.Add(this.pictureBox1);
+            this.DuplImagesSplitContainer.Panel1.Controls.Add(this.LeftDuplPictureBox);
             // 
             // DuplImagesSplitContainer.Panel2
             // 
             this.DuplImagesSplitContainer.Panel2.BackColor = System.Drawing.Color.DarkGoldenrod;
-            this.DuplImagesSplitContainer.Panel2.Controls.Add(this.pictureBox2);
+            this.DuplImagesSplitContainer.Panel2.Controls.Add(this.RightDuplPictureBox);
             // 
-            // pictureBox1
+            // LeftDuplPictureBox
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Black;
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
+            this.LeftDuplPictureBox.BackColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.LeftDuplPictureBox, "LeftDuplPictureBox");
+            this.LeftDuplPictureBox.Name = "LeftDuplPictureBox";
+            this.LeftDuplPictureBox.TabStop = false;
             // 
-            // pictureBox2
+            // RightDuplPictureBox
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Black;
-            resources.ApplyResources(this.pictureBox2, "pictureBox2");
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.TabStop = false;
+            this.RightDuplPictureBox.BackColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.RightDuplPictureBox, "RightDuplPictureBox");
+            this.RightDuplPictureBox.Name = "RightDuplPictureBox";
+            this.RightDuplPictureBox.TabStop = false;
+            // 
+            // ResultLabel
+            // 
+            resources.ApplyResources(this.ResultLabel, "ResultLabel");
+            this.ResultLabel.BackColor = System.Drawing.Color.Transparent;
+            this.ResultLabel.Name = "ResultLabel";
             // 
             // DuplImagesListView
             // 
@@ -383,50 +391,65 @@
             this.columnHeader6,
             this.columnHeader7});
             resources.ApplyResources(this.DuplImagesListView, "DuplImagesListView");
+            this.DuplImagesListView.FullRowSelect = true;
             this.DuplImagesListView.HideSelection = false;
             this.DuplImagesListView.Name = "DuplImagesListView";
             this.DuplImagesListView.UseCompatibleStateImageBehavior = false;
             this.DuplImagesListView.View = System.Windows.Forms.View.Details;
+            this.DuplImagesListView.MouseClick += new System.Windows.Forms.MouseEventHandler(this.DuplImagesListView_MouseClick);
+            // 
+            // columnHeader6
+            // 
+            resources.ApplyResources(this.columnHeader6, "columnHeader6");
+            // 
+            // columnHeader7
+            // 
+            resources.ApplyResources(this.columnHeader7, "columnHeader7");
             // 
             // menuStrip2
             // 
             this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.удалитьЛевоеToolStripMenuItem,
-            this.удалитьПравоеToolStripMenuItem,
-            this.удалитьОбаToolStripMenuItem,
-            this.отметитьКакОшибкуToolStripMenuItem,
-            this.отменаToolStripMenuItem});
+            this.DeleteLeftToolStripMenuItem,
+            this.DeleteRightToolStripMenuItem,
+            this.DeleteBothToolStripMenuItem,
+            this.FalsePositiveToolStripMenuItem,
+            this.RetrieveToolStripMenuItem});
             resources.ApplyResources(this.menuStrip2, "menuStrip2");
             this.menuStrip2.Name = "menuStrip2";
             // 
-            // удалитьЛевоеToolStripMenuItem
+            // DeleteLeftToolStripMenuItem
             // 
-            this.удалитьЛевоеToolStripMenuItem.Name = "удалитьЛевоеToolStripMenuItem";
-            resources.ApplyResources(this.удалитьЛевоеToolStripMenuItem, "удалитьЛевоеToolStripMenuItem");
+            this.DeleteLeftToolStripMenuItem.Name = "DeleteLeftToolStripMenuItem";
+            resources.ApplyResources(this.DeleteLeftToolStripMenuItem, "DeleteLeftToolStripMenuItem");
+            this.DeleteLeftToolStripMenuItem.Click += new System.EventHandler(this.DeleteLeftButton_Click);
             // 
-            // удалитьПравоеToolStripMenuItem
+            // DeleteRightToolStripMenuItem
             // 
-            this.удалитьПравоеToolStripMenuItem.Name = "удалитьПравоеToolStripMenuItem";
-            resources.ApplyResources(this.удалитьПравоеToolStripMenuItem, "удалитьПравоеToolStripMenuItem");
+            this.DeleteRightToolStripMenuItem.Name = "DeleteRightToolStripMenuItem";
+            resources.ApplyResources(this.DeleteRightToolStripMenuItem, "DeleteRightToolStripMenuItem");
+            this.DeleteRightToolStripMenuItem.Click += new System.EventHandler(this.DeleteRightButton_Click);
             // 
-            // удалитьОбаToolStripMenuItem
+            // DeleteBothToolStripMenuItem
             // 
-            this.удалитьОбаToolStripMenuItem.Name = "удалитьОбаToolStripMenuItem";
-            resources.ApplyResources(this.удалитьОбаToolStripMenuItem, "удалитьОбаToolStripMenuItem");
+            this.DeleteBothToolStripMenuItem.Name = "DeleteBothToolStripMenuItem";
+            resources.ApplyResources(this.DeleteBothToolStripMenuItem, "DeleteBothToolStripMenuItem");
+            this.DeleteBothToolStripMenuItem.Click += new System.EventHandler(this.DeleteBothButton_Click);
             // 
-            // отметитьКакОшибкуToolStripMenuItem
+            // FalsePositiveToolStripMenuItem
             // 
-            this.отметитьКакОшибкуToolStripMenuItem.Name = "отметитьКакОшибкуToolStripMenuItem";
-            resources.ApplyResources(this.отметитьКакОшибкуToolStripMenuItem, "отметитьКакОшибкуToolStripMenuItem");
+            this.FalsePositiveToolStripMenuItem.Name = "FalsePositiveToolStripMenuItem";
+            resources.ApplyResources(this.FalsePositiveToolStripMenuItem, "FalsePositiveToolStripMenuItem");
+            this.FalsePositiveToolStripMenuItem.Click += new System.EventHandler(this.FalsePositiveButton_Click);
             // 
-            // отменаToolStripMenuItem
+            // RetrieveToolStripMenuItem
             // 
-            this.отменаToolStripMenuItem.Name = "отменаToolStripMenuItem";
-            resources.ApplyResources(this.отменаToolStripMenuItem, "отменаToolStripMenuItem");
+            this.RetrieveToolStripMenuItem.Name = "RetrieveToolStripMenuItem";
+            resources.ApplyResources(this.RetrieveToolStripMenuItem, "RetrieveToolStripMenuItem");
+            this.RetrieveToolStripMenuItem.Click += new System.EventHandler(this.RetrieveButton_Click);
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.DuplInterfaceSplitContainer1);
+            this.tabPage2.Controls.Add(this.DuplInterfaceSplitContainer);
             this.tabPage2.Controls.Add(this.menuStrip1);
             resources.ApplyResources(this.tabPage2, "tabPage2");
             this.tabPage2.Name = "tabPage2";
@@ -435,20 +458,22 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.добавитьПапкуToolStripMenuItem,
-            this.запускToolStripMenuItem});
+            this.AddFolderToolStripMenuItem,
+            this.MakeStuffToolStripMenuItem});
             resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Name = "menuStrip1";
             // 
-            // добавитьПапкуToolStripMenuItem
+            // AddFolderToolStripMenuItem
             // 
-            this.добавитьПапкуToolStripMenuItem.Name = "добавитьПапкуToolStripMenuItem";
-            resources.ApplyResources(this.добавитьПапкуToolStripMenuItem, "добавитьПапкуToolStripMenuItem");
+            this.AddFolderToolStripMenuItem.Name = "AddFolderToolStripMenuItem";
+            resources.ApplyResources(this.AddFolderToolStripMenuItem, "AddFolderToolStripMenuItem");
+            this.AddFolderToolStripMenuItem.Click += new System.EventHandler(this.LoadButton_Click);
             // 
-            // запускToolStripMenuItem
+            // MakeStuffToolStripMenuItem
             // 
-            this.запускToolStripMenuItem.Name = "запускToolStripMenuItem";
-            resources.ApplyResources(this.запускToolStripMenuItem, "запускToolStripMenuItem");
+            this.MakeStuffToolStripMenuItem.Name = "MakeStuffToolStripMenuItem";
+            resources.ApplyResources(this.MakeStuffToolStripMenuItem, "MakeStuffToolStripMenuItem");
+            this.MakeStuffToolStripMenuItem.Click += new System.EventHandler(this.MakeStuffButton_Click);
             // 
             // tabPage1
             // 
@@ -493,14 +518,6 @@
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             // 
-            // columnHeader6
-            // 
-            resources.ApplyResources(this.columnHeader6, "columnHeader6");
-            // 
-            // columnHeader7
-            // 
-            resources.ApplyResources(this.columnHeader7, "columnHeader7");
-            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
@@ -509,6 +526,7 @@
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.MainMenuStrip = this.ProfileMenuStrip;
             this.Name = "Form1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.SizeChanged += new System.EventHandler(this.Form1_SizeChanged);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form1_KeyPress);
             this.MainSplitContainer.Panel1.ResumeLayout(false);
@@ -525,17 +543,17 @@
             this.OptionsSplitContainer.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.OptionsSplitContainer)).EndInit();
             this.OptionsSplitContainer.ResumeLayout(false);
-            this.DuplInterfaceSplitContainer1.Panel1.ResumeLayout(false);
-            this.DuplInterfaceSplitContainer1.Panel2.ResumeLayout(false);
-            this.DuplInterfaceSplitContainer1.Panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DuplInterfaceSplitContainer1)).EndInit();
-            this.DuplInterfaceSplitContainer1.ResumeLayout(false);
+            this.DuplInterfaceSplitContainer.Panel1.ResumeLayout(false);
+            this.DuplInterfaceSplitContainer.Panel2.ResumeLayout(false);
+            this.DuplInterfaceSplitContainer.Panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DuplInterfaceSplitContainer)).EndInit();
+            this.DuplInterfaceSplitContainer.ResumeLayout(false);
             this.DuplImagesSplitContainer.Panel1.ResumeLayout(false);
             this.DuplImagesSplitContainer.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DuplImagesSplitContainer)).EndInit();
             this.DuplImagesSplitContainer.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LeftDuplPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RightDuplPictureBox)).EndInit();
             this.menuStrip2.ResumeLayout(false);
             this.menuStrip2.PerformLayout();
             this.tabPage2.ResumeLayout(false);
@@ -585,22 +603,23 @@
         private System.Windows.Forms.ToolStripMenuItem SaveProfileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem настройкиToolStripMenuItem;
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.SplitContainer DuplInterfaceSplitContainer1;
+        private System.Windows.Forms.SplitContainer DuplInterfaceSplitContainer;
         private System.Windows.Forms.SplitContainer DuplImagesSplitContainer;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox LeftDuplPictureBox;
+        private System.Windows.Forms.PictureBox RightDuplPictureBox;
         private System.Windows.Forms.ListView DuplImagesListView;
         private System.Windows.Forms.MenuStrip menuStrip2;
-        private System.Windows.Forms.ToolStripMenuItem удалитьЛевоеToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem удалитьПравоеToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem удалитьОбаToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem отметитьКакОшибкуToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem отменаToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem DeleteLeftToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem DeleteRightToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem DeleteBothToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem FalsePositiveToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem RetrieveToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem добавитьПапкуToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem запускToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem AddFolderToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem MakeStuffToolStripMenuItem;
         private System.Windows.Forms.ColumnHeader columnHeader6;
         private System.Windows.Forms.ColumnHeader columnHeader7;
+        private System.Windows.Forms.Label ResultLabel;
     }
 }
 
