@@ -20,10 +20,8 @@ namespace ImageSorter
 
         private void Form2_KeyDown(object sender, KeyEventArgs e)
         {
-            if(e.KeyCode == Keys.Escape)
-            {
+            if (e.KeyCode == Keys.Escape)
                 this.Close();
-            }
         }
     }
 }

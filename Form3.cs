@@ -20,7 +20,7 @@ namespace ImageSorter
                 System.Threading.Thread.CurrentThread.CurrentUICulture = System.Globalization.CultureInfo.GetCultureInfo(Properties.Settings.Default.Language);
                 System.Threading.Thread.CurrentThread.CurrentCulture = System.Globalization.CultureInfo.GetCultureInfo(Properties.Settings.Default.Language);
             }
-            
+
             InitializeComponent();
             FirstForm = parentForm;
         }
@@ -36,34 +36,22 @@ namespace ImageSorter
             comboBox1.DisplayMember = "NativeName";
             comboBox1.ValueMember = "Name";
 
-            if(Properties.Settings.Default.GetImageMethod == "random")
-            {
+            if (Properties.Settings.Default.GetImageMethod == "random")
                 radioButton1.Checked = true;
-            }
             else
-            {
                 radioButton2.Checked = true;
-            }
 
-            if(Properties.Settings.Default.SkipImageMethod == "folder")
-            {
+            if (Properties.Settings.Default.SkipImageMethod == "folder")
                 radioButton3.Checked = true;
-            }
             else
-            {
                 radioButton4.Checked = true;
-            }
 
-            if(Properties.Settings.Default.SortImageMethod == "top")
-            {
+            if (Properties.Settings.Default.SortImageMethod == "top")
                 radioButton5.Checked = true;
-            }
             else
-            {
                 radioButton6.Checked = true;
-            }
 
-            if(!String.IsNullOrEmpty(Properties.Settings.Default.Language))
+            if (!String.IsNullOrEmpty(Properties.Settings.Default.Language))
             {
                 Properties.Settings.Default.Language = comboBox1.SelectedValue.ToString();
                 Properties.Settings.Default.Save();
@@ -71,44 +59,36 @@ namespace ImageSorter
         }
 
         private void button1_Click(object sender, EventArgs e)
-        { 
+        {
             Properties.Settings.Default.Language = comboBox1.SelectedValue.ToString();
-            
-            if(radioButton1.Checked == true)
-            {
+
+            if (radioButton1.Checked)
                 Properties.Settings.Default.GetImageMethod = "random";
-            }
             else
-            {
                 Properties.Settings.Default.GetImageMethod = "last";
-            }
 
-            if(radioButton3.Checked == true)
-            {
+            if (radioButton3.Checked)
                 Properties.Settings.Default.SkipImageMethod = "folder";
-            }
             else
-            {
                 Properties.Settings.Default.SkipImageMethod = "clear";
-            }
 
-            if(radioButton5.Checked == true)
-            {
+            if (radioButton5.Checked)
                 Properties.Settings.Default.SortImageMethod = "top";
-            }
             else
-            {
                 Properties.Settings.Default.SortImageMethod = "all";
-            }
+
             Properties.Settings.Default.Save();
-            if(System.Threading.Thread.CurrentThread.CurrentUICulture != System.Globalization.CultureInfo.GetCultureInfo(Properties.Settings.Default.Language))
+
+            if (System.Threading.Thread.CurrentThread.CurrentUICulture != System.Globalization.CultureInfo.GetCultureInfo(Properties.Settings.Default.Language))
             {
-                if((MessageBox.Show("Был изменён язык. Для применения настроек программа будет перезапущена. Подтвердить?", "Внимание", MessageBoxButtons.OKCancel)) == DialogResult.OK)
+                if ((MessageBox.Show("Был изменён язык. Для применения настроек программа будет перезапущена. Подтвердить?", "Внимание", MessageBoxButtons.OKCancel)) == DialogResult.OK)
                 {
                     System.Threading.Thread.CurrentThread.CurrentUICulture = System.Globalization.CultureInfo.GetCultureInfo(Properties.Settings.Default.Language);
                     System.Threading.Thread.CurrentThread.CurrentCulture = System.Globalization.CultureInfo.GetCultureInfo(Properties.Settings.Default.Language);
-                    FirstForm.Controls.Clear();
                     Properties.Settings.Default.LanguageChanged = "changed";
+                    
+                    FirstForm.Controls.Clear();
+                    
                     this.Close();
                 }
                 else
@@ -122,7 +102,7 @@ namespace ImageSorter
                 Properties.Settings.Default.LanguageChanged = "not";
                 this.Close();
             }
-            
+
         }
 
         private void button2_Click(object sender, EventArgs e)

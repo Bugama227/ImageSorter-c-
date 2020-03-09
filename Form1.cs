@@ -27,7 +27,7 @@ namespace ImageSorter
 
         public Form1()
         {
-            if(!String.IsNullOrEmpty(Properties.Settings.Default.Language))
+            if (!String.IsNullOrEmpty(Properties.Settings.Default.Language))
             {
                 System.Threading.Thread.CurrentThread.CurrentUICulture = System.Globalization.CultureInfo.GetCultureInfo(Properties.Settings.Default.Language);
                 System.Threading.Thread.CurrentThread.CurrentCulture = System.Globalization.CultureInfo.GetCultureInfo(Properties.Settings.Default.Language);
@@ -63,7 +63,7 @@ namespace ImageSorter
             int buffPathIndex = (Properties.Settings.Default.GetImageMethod == "random")
                 ? random.Next(ImagesPaths.Count)
                 : ImagesPaths.Count - 1;
-            
+
 
             try
             {
@@ -79,7 +79,7 @@ namespace ImageSorter
                     SkipButton.Enabled = false;
                     return null;
                 }
-                else if(ImagesPaths.Count <= 0) // if length lower than 0 directory is empty
+                else if (ImagesPaths.Count <= 0) // if length lower than 0 directory is empty
                 {
                     MessageBox.Show(Localization.FolderIsEmptyMSG);
                     SkipButton.Enabled = false;
@@ -190,11 +190,11 @@ namespace ImageSorter
 
         private void UpdateFolderListViewItem()
         {
-            if (NameFolderLabel.Text == "") 
+            if (NameFolderLabel.Text == "")
                 NameFolderLabel.Text = Localization.UnknownNameFolderLV;
 
-            if (HotKeyLabel.Text == "") 
-                HotKeyLabel.Text = "�"; 
+            if (HotKeyLabel.Text == "")
+                HotKeyLabel.Text = "�";
 
             FolderListView.SelectedItems[0].SubItems[0].Text = NameFolderLabel.Text;
             FolderListView.SelectedItems[0].SubItems[1].Text = toolTip1.GetToolTip(FolderPathLabel);
@@ -209,9 +209,9 @@ namespace ImageSorter
         private void DeleteFolderListViewItem()
         {
             DialogResult dialogResult = MessageBox.Show(
-                Localization.DeleteButtonTextFolderLV, 
-                Localization.DeleteButtonTitleFolderLV, 
-                MessageBoxButtons.OKCancel, 
+                Localization.DeleteButtonTextFolderLV,
+                Localization.DeleteButtonTitleFolderLV,
+                MessageBoxButtons.OKCancel,
                 MessageBoxIcon.Warning
             );
 
@@ -282,7 +282,7 @@ namespace ImageSorter
                 StreamReader profileSR = new StreamReader(ofd.FileName, false);
                 PictureFolderLocation = profileSR.ReadLine().ToString();
 
-                if(PictureFolderLocation != "nothing" && Directory.Exists(PictureFolderLocation))
+                if (PictureFolderLocation != "nothing" && Directory.Exists(PictureFolderLocation))
                     GetNewImage();
                 else
                     PictureFolderLocation = "";
@@ -391,7 +391,7 @@ namespace ImageSorter
         private void NameFolderTextBox_Leave(object sender, EventArgs e)
         {
             this.KeyPreview = true; // to return ability to scan keys for HotKeys
-            NameFolderLabel.Text = NameFolderTextBox.Text; 
+            NameFolderLabel.Text = NameFolderTextBox.Text;
         }
 
         private void PathButton_Click(object sender, EventArgs e)
@@ -430,9 +430,9 @@ namespace ImageSorter
         {
             if (toolTip1.GetToolTip(FolderPathLabel) == "")
                 MessageBox.Show(
-                    Localization.AddButtonClickTextFolderLV, 
-                    Localization.AddButtonClickTitleFolderLV, 
-                    MessageBoxButtons.OK, 
+                    Localization.AddButtonClickTextFolderLV,
+                    Localization.AddButtonClickTitleFolderLV,
+                    MessageBoxButtons.OK,
                     MessageBoxIcon.Warning
                 );
             else
@@ -464,8 +464,8 @@ namespace ImageSorter
             {
                 MessageBox.Show(
                     Localization.UpdateButtonClickTextFolderLV,
-                    Localization.UpdateButtonClickTitleFolderLV, 
-                    MessageBoxButtons.OK, 
+                    Localization.UpdateButtonClickTitleFolderLV,
+                    MessageBoxButtons.OK,
                     MessageBoxIcon.Warning
                 );
             }
@@ -491,9 +491,9 @@ namespace ImageSorter
         private void ClearFolderListViewButton_Click(object sender, EventArgs e)
         {
             DialogResult dialogResult = MessageBox.Show(
-                Localization.ClearButtonClickTextFolderLV, 
-                Localization.ClearButtonClickTitleFolderLV, 
-                MessageBoxButtons.OKCancel, 
+                Localization.ClearButtonClickTextFolderLV,
+                Localization.ClearButtonClickTitleFolderLV,
+                MessageBoxButtons.OKCancel,
                 MessageBoxIcon.Warning
             );
 
@@ -513,7 +513,7 @@ namespace ImageSorter
                 Path.GetFileNameWithoutExtension(CurrentPath),
                 Path.GetExtension(CurrentPath)
             );
-            
+
             if (FolderListView.SelectedItems.Count != 0)
             {
                 NameFolderLabel.Text = FolderListView.SelectedItems[0].SubItems[0].Text;
@@ -523,7 +523,7 @@ namespace ImageSorter
             }
 
             if (
-                e.Button == MouseButtons.Right && 
+                e.Button == MouseButtons.Right &&
                 FolderListView.FocusedItem != null &&
                 FolderListView.FocusedItem.Bounds.Contains(e.Location)
             )
@@ -584,7 +584,7 @@ namespace ImageSorter
             catch
             {
                 MessageBox.Show(
-                    Localization.DoubleClickOnLVItemTextFolderLV, 
+                    Localization.DoubleClickOnLVItemTextFolderLV,
                     Localization.DoubleClickOnLVItemTitleFolderLV,
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Error,
@@ -638,7 +638,7 @@ namespace ImageSorter
 
         private void ImagePictureBox_Click(object sender, EventArgs e)
         {
-            if(ImagePictureBox.Image != null)
+            if (ImagePictureBox.Image != null)
             {
                 Form form2 = new Form2(CurrentPath);
                 form2.Show();
@@ -652,7 +652,7 @@ namespace ImageSorter
             this.Visible = false;
             form3.Show();
         }
-        
+
         private void OptionsForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             this.Visible = true;
