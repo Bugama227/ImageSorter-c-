@@ -328,39 +328,20 @@ namespace ImageSorter
             FolderListView.Items.Add(new ListViewItem(new[] { Name, Path, HotKey }));
         }
 
-        private void Form1_SizeChanged(object sender, EventArgs e)
-        {
-            // if window getting minimized without that condition,
-            //exception of getting splitterdistance lower than 0
-            if (WindowState != FormWindowState.Minimized)
-            {
-                // made to stabilize form of an add folder menu
-                // i found only way to do that. With changing splitters location
-                MainSplitContainer.SplitterDistance = ClientSize.Width - 280;
-                OptionsSplitContainer.SplitterDistance = ClientSize.Width - 200;
-                ImageSplitContainer.SplitterDistance = ClientSize.Height - 200;
-
-                DuplImagesSplitContainer.SplitterDistance = ClientSize.Width / 2;
-                DuplInterfaceSplitContainer.SplitterDistance = ClientSize.Height - ClientSize.Height / 3;
-
-                DuplImagesListView.Columns[0].Width = ClientSize.Width / 2;
-            }
-        }
-
         private void CollapseOptionsButton_Click(object sender, EventArgs e)
         {
-            MainSplitContainer.Panel2Collapsed = !MainSplitContainer.Panel2Collapsed;
+            this.MainSplitContainer.Panel2Collapsed = !this.MainSplitContainer.Panel2Collapsed;
 
-            CollapseOptionsButton.Text = (MainSplitContainer.Panel2Collapsed)
+            this.CollapseOptionsButton.Text = (this.MainSplitContainer.Panel2Collapsed)
                 ? "←←←"  // To open
                 : "→→→"; // To close
         }
 
         private void ColapseFoldersButton_Click(object sender, EventArgs e)
         {
-            ImageSplitContainer.Panel2Collapsed = !ImageSplitContainer.Panel2Collapsed;
+            this.ImageSplitContainer.Panel2Collapsed = !this.ImageSplitContainer.Panel2Collapsed;
 
-            ColapseFoldersButton.Text = (ImageSplitContainer.Panel2Collapsed)
+            this.ColapseFoldersButton.Text = (this.ImageSplitContainer.Panel2Collapsed)
                 ? "↑↑↑"  // To open
                 : "↓↓↓"; // To close
         }
@@ -443,8 +424,8 @@ namespace ImageSorter
             while (true) // try until user click cancel or input allowed symbol
             {
                 string buff = Interaction.InputBox(Localization.HotkeyText, Localization.HotkeyTitle).ToLower();
-
-                if (buff.Length > 1 || new Regex(@"[А-яЁё]$").IsMatch(buff)) // if amount of written symbols is greater than 1 or it's russian
+                // if amount of written symbols is greater than 1 or it's not english
+                if (buff.Length > 1 || new Regex(@"[А-яЁё]$").IsMatch(buff)) 
                     MessageBox.Show(Localization.HotkeyErrorText);
                 else // cancel was clicked or allowed symbol was input
                 {
@@ -536,11 +517,11 @@ namespace ImageSorter
 
         private void FolderListView_MouseClick(object sender, MouseEventArgs e)
         {
-            CheckForDuplicates(
+            /*CheckForDuplicates(
                 FolderListView.SelectedItems[0].SubItems[1].Text,
                 Path.GetFileNameWithoutExtension(CurrentPath),
                 Path.GetExtension(CurrentPath)
-            );
+            );*/
 
             if (FolderListView.SelectedItems.Count != 0)
             {
@@ -558,17 +539,17 @@ namespace ImageSorter
             {
                 ContextMenu m = new ContextMenu();
                 MenuItem OpenFolderMenuItem = new MenuItem(Localization.RightClickOnLVItemTextFolderLV);
-
-                OpenFolderMenuItem.Click += delegate (object sender2, EventArgs e2)
-                {
-                    Process.Start(FolderListView.SelectedItems[0].SubItems[1].Text);
-                };
-
                 m.MenuItems.Add(OpenFolderMenuItem);
 
                 m.Show(FolderListView, new Point(e.X, e.Y));
-                m.Dispose();
+
+                OpenFolderMenuItem.Click += new System.EventHandler(FolderMenuItem_Click);
             }
+        }
+
+        private void FolderMenuItem_Click(object sender, System.EventArgs e)
+        {
+            Process.Start("explorer.exe", FolderListView.SelectedItems[0].SubItems[1].Text);
         }
 
         private void FolderListView_MouseDoubleClick(object sender, MouseEventArgs e)
@@ -585,7 +566,7 @@ namespace ImageSorter
             try
             {
                 // test on similar name
-                if (File.Exists($"{FolderListView.SelectedItems[0].SubItems[1].Text}\\{Path.GetFileName(CurrentPath)}")) // if any familiarities found
+                if (File.Exists($"{fileDir}\\{Path.GetFileName(CurrentPath)}")) // if any familiarities found
                 {
                     int i = 1;
 
@@ -624,13 +605,16 @@ namespace ImageSorter
 
         private void Form1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            foreach (ListViewItem item in FolderListView.Items)
-                if (item.SubItems[2].Text == e.KeyChar.ToString())
-                    CheckForDuplicates(
-                        item.SubItems[1].Text,
-                        Path.GetFileNameWithoutExtension(CurrentPath),
-                        Path.GetExtension(CurrentPath)
-                    );
+            /*if (CurrentPath != null)
+            {
+                foreach (ListViewItem item in FolderListView.Items)
+                    if (item.SubItems[2].Text == e.KeyChar.ToString())
+                        CheckForDuplicates(
+                            item.SubItems[1].Text,
+                            Path.GetFileNameWithoutExtension(CurrentPath),
+                            Path.GetExtension(CurrentPath)
+                        );
+            }*/
         }
 
         private void SaveProfileToolStripMenuItem_Click(object sender, EventArgs e)
@@ -798,11 +782,16 @@ namespace ImageSorter
 
             await CompareHelpers.CompareFingerPrints(this.LightHashes, this.Matches);
             await CompareHelpers.CompareFingerPrints(this.DarkHashes, this.Matches);
-
+            
             this.BeginInvoke((ThreadStart)async delegate ()
             {
                 this.ResultLabel.Text = await this.SetMatchesIntoLV();
             });
+        }
+
+        private string UpdateResultLabel()
+        {
+            return this.DuplImagesListView.Items.Count.ToString();
         }
 
         private void DuplImagesListView_MouseClick(object sender, MouseEventArgs e)
@@ -822,21 +811,29 @@ namespace ImageSorter
         private void DeleteLeftButton_Click(object sender, EventArgs e)
         {
             this.RemoveMatchFromLV(RemoveCase.Left);
+            
+            ResultLabel.Text = UpdateResultLabel();
         }
 
         private void DeleteRightButton_Click(object sender, EventArgs e)
         {
             this.RemoveMatchFromLV(RemoveCase.Right);
+
+            ResultLabel.Text = UpdateResultLabel();
         }
 
         private void DeleteBothButton_Click(object sender, EventArgs e)
         {
             this.RemoveMatchFromLV(RemoveCase.Both);
+
+            ResultLabel.Text = UpdateResultLabel();
         }
 
         private void FalsePositiveButton_Click(object sender, EventArgs e)
         {
             this.RemoveMatchFromLV(RemoveCase.FalsePositive);
+
+            ResultLabel.Text = UpdateResultLabel();
         }
 
         private void RetrieveButton_Click(object sender, EventArgs e)
@@ -852,6 +849,41 @@ namespace ImageSorter
                 FoldingHelpers.MoveIfExists($"{this.FolderPath}\\TempFolder\\{rightMatch}", $"{this.FolderPath}\\{rightMatch}");
 
                 this.TempOfRemoved.Remove(this.TempOfRemoved.Keys.Last());
+            }
+        }
+
+        private void tabPage1_SizeChanged(object sender, EventArgs e)
+        {
+            if (this.WindowState != FormWindowState.Minimized)
+            {
+                this.MainSplitContainer.SplitterDistance = ClientSize.Width - 280;
+                this.OptionsSplitContainer.SplitterDistance = ClientSize.Width - 200;
+                this.ImageSplitContainer.SplitterDistance = ClientSize.Height - 200;
+            }
+        }
+
+        private void tabPage2_SizeChanged(object sender, EventArgs e)
+        {
+            if (this.WindowState != FormWindowState.Minimized)
+            {
+                this.DuplImagesSplitContainer.SplitterDistance = ClientSize.Width / 2;
+                this.DuplInterfaceSplitContainer.SplitterDistance = ClientSize.Height - ClientSize.Height / 3;
+
+                this.DuplImagesListView.Columns[0].Width = ClientSize.Width / 2;
+            }
+        }
+
+        private void tabControl1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (tabControl1.SelectedTab == tabPage1 && CurrentPath != null)
+            {
+                foreach (ListViewItem item in FolderListView.Items)
+                    if (item.SubItems[2].Text == e.KeyChar.ToString())
+                        CheckForDuplicates(
+                            item.SubItems[1].Text,
+                            Path.GetFileNameWithoutExtension(CurrentPath),
+                            Path.GetExtension(CurrentPath)
+                        );
             }
         }
 

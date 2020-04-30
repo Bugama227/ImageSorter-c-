@@ -23,5 +23,10 @@ namespace ImageSorter
             if (e.KeyCode == Keys.Escape)
                 this.Close();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

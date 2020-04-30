@@ -156,44 +156,50 @@
   <data name="AddFolderButton.Text" xml:space="preserve">
     <value>Add</value>
   </data>
+  <data name="columnHeader6.Text" xml:space="preserve">
+    <value>Left Image</value>
+  </data>
+  <data name="columnHeader7.Text" xml:space="preserve">
+    <value>Right Image</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="удалитьЛевоеToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="DeleteLeftToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 20</value>
   </data>
-  <data name="удалитьЛевоеToolStripMenuItem.Text" xml:space="preserve">
+  <data name="DeleteLeftToolStripMenuItem.Text" xml:space="preserve">
     <value>Delete Left</value>
   </data>
-  <data name="удалитьПравоеToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="DeleteRightToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>83, 20</value>
   </data>
-  <data name="удалитьПравоеToolStripMenuItem.Text" xml:space="preserve">
+  <data name="DeleteRightToolStripMenuItem.Text" xml:space="preserve">
     <value>Delete Right</value>
   </data>
-  <data name="удалитьОбаToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="DeleteBothToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 20</value>
   </data>
-  <data name="удалитьОбаToolStripMenuItem.Text" xml:space="preserve">
+  <data name="DeleteBothToolStripMenuItem.Text" xml:space="preserve">
     <value>Delete Both</value>
   </data>
-  <data name="отметитьКакОшибкуToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="FalsePositiveToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>137, 20</value>
   </data>
-  <data name="отметитьКакОшибкуToolStripMenuItem.Text" xml:space="preserve">
+  <data name="FalsePositiveToolStripMenuItem.Text" xml:space="preserve">
     <value>Mark As False-Positive</value>
   </data>
-  <data name="отменаToolStripMenuItem.Text" xml:space="preserve">
+  <data name="RetrieveToolStripMenuItem.Text" xml:space="preserve">
     <value>Retrieve</value>
   </data>
-  <data name="добавитьПапкуToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 20</value>
+  <data name="AddFolderToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 20</value>
   </data>
-  <data name="добавитьПапкуToolStripMenuItem.Text" xml:space="preserve">
-    <value>Add Folder</value>
+  <data name="AddFolderToolStripMenuItem.Text" xml:space="preserve">
+    <value>Add folder</value>
   </data>
-  <data name="запускToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="MakeStuffToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>58, 20</value>
   </data>
-  <data name="запускToolStripMenuItem.Text" xml:space="preserve">
+  <data name="MakeStuffToolStripMenuItem.Text" xml:space="preserve">
     <value>Launch</value>
   </data>
   <data name="tabPage2.Text" xml:space="preserve">

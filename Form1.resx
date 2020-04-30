@@ -252,6 +252,24 @@
   <data name="ImageSplitContainer.Panel1MinSize" type="System.Int32, mscorlib">
     <value>300</value>
   </data>
+  <data name="columnHeader3.Text" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="columnHeader3.Width" type="System.Int32, mscorlib">
+    <value>140</value>
+  </data>
+  <data name="columnHeader4.Text" xml:space="preserve">
+    <value>Путь</value>
+  </data>
+  <data name="columnHeader4.Width" type="System.Int32, mscorlib">
+    <value>250</value>
+  </data>
+  <data name="columnHeader5.Text" xml:space="preserve">
+    <value>Горячая Клавиша</value>
+  </data>
+  <data name="columnHeader5.Width" type="System.Int32, mscorlib">
+    <value>104</value>
+  </data>
   <data name="FolderListView.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -404,6 +422,18 @@
   </data>
   <data name="ImagePropertiesListView.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="columnHeader1.Text" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="columnHeader1.Width" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="columnHeader2.Text" xml:space="preserve">
+    <value>Значение</value>
+  </data>
+  <data name="columnHeader2.Width" type="System.Int32, mscorlib">
+    <value>170</value>
   </data>
   <data name="ImagePropertiesListView.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -801,36 +831,6 @@
   <data name="&gt;&gt;MainSplitContainer.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="columnHeader3.Text" xml:space="preserve">
-    <value>Название</value>
-  </data>
-  <data name="columnHeader3.Width" type="System.Int32, mscorlib">
-    <value>140</value>
-  </data>
-  <data name="columnHeader4.Text" xml:space="preserve">
-    <value>Путь</value>
-  </data>
-  <data name="columnHeader4.Width" type="System.Int32, mscorlib">
-    <value>250</value>
-  </data>
-  <data name="columnHeader5.Text" xml:space="preserve">
-    <value>Горячая Клавиша</value>
-  </data>
-  <data name="columnHeader5.Width" type="System.Int32, mscorlib">
-    <value>104</value>
-  </data>
-  <data name="columnHeader1.Text" xml:space="preserve">
-    <value>Название</value>
-  </data>
-  <data name="columnHeader1.Width" type="System.Int32, mscorlib">
-    <value>90</value>
-  </data>
-  <data name="columnHeader2.Text" xml:space="preserve">
-    <value>Значение</value>
-  </data>
-  <data name="columnHeader2.Width" type="System.Int32, mscorlib">
-    <value>170</value>
-  </data>
   <data name="DuplInterfaceSplitContainer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -1029,6 +1029,36 @@
   <metadata name="menuStrip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>275, 17</value>
   </metadata>
+  <data name="DeleteLeftToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 20</value>
+  </data>
+  <data name="DeleteLeftToolStripMenuItem.Text" xml:space="preserve">
+    <value>Удалить Левое</value>
+  </data>
+  <data name="DeleteRightToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 20</value>
+  </data>
+  <data name="DeleteRightToolStripMenuItem.Text" xml:space="preserve">
+    <value>Удалить Правое</value>
+  </data>
+  <data name="DeleteBothToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 20</value>
+  </data>
+  <data name="DeleteBothToolStripMenuItem.Text" xml:space="preserve">
+    <value>Удалить Оба</value>
+  </data>
+  <data name="FalsePositiveToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 20</value>
+  </data>
+  <data name="FalsePositiveToolStripMenuItem.Text" xml:space="preserve">
+    <value>Отметить Как Ошибку</value>
+  </data>
+  <data name="RetrieveToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 20</value>
+  </data>
+  <data name="RetrieveToolStripMenuItem.Text" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
   <data name="menuStrip2.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
@@ -1089,39 +1119,21 @@
   <data name="&gt;&gt;DuplInterfaceSplitContainer.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="DeleteLeftToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>99, 20</value>
-  </data>
-  <data name="DeleteLeftToolStripMenuItem.Text" xml:space="preserve">
-    <value>Удалить Левое</value>
-  </data>
-  <data name="DeleteRightToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 20</value>
-  </data>
-  <data name="DeleteRightToolStripMenuItem.Text" xml:space="preserve">
-    <value>Удалить Правое</value>
-  </data>
-  <data name="DeleteBothToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 20</value>
-  </data>
-  <data name="DeleteBothToolStripMenuItem.Text" xml:space="preserve">
-    <value>Удалить Оба</value>
-  </data>
-  <data name="FalsePositiveToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>142, 20</value>
-  </data>
-  <data name="FalsePositiveToolStripMenuItem.Text" xml:space="preserve">
-    <value>Отметить Как Ошибку</value>
-  </data>
-  <data name="RetrieveToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 20</value>
-  </data>
-  <data name="RetrieveToolStripMenuItem.Text" xml:space="preserve">
-    <value>Отмена</value>
-  </data>
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>160, 17</value>
   </metadata>
+  <data name="AddFolderToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 20</value>
+  </data>
+  <data name="AddFolderToolStripMenuItem.Text" xml:space="preserve">
+    <value>Добавить папку</value>
+  </data>
+  <data name="MakeStuffToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 20</value>
+  </data>
+  <data name="MakeStuffToolStripMenuItem.Text" xml:space="preserve">
+    <value>Запуск</value>
+  </data>
   <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 3</value>
   </data>
@@ -1173,21 +1185,39 @@
   <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="AddFolderToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>106, 20</value>
-  </data>
-  <data name="AddFolderToolStripMenuItem.Text" xml:space="preserve">
-    <value>Добавить папку</value>
-  </data>
-  <data name="MakeStuffToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 20</value>
-  </data>
-  <data name="MakeStuffToolStripMenuItem.Text" xml:space="preserve">
-    <value>Запуск</value>
-  </data>
   <metadata name="ProfileMenuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="LoadProfileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 20</value>
+  </data>
+  <data name="LoadProfileToolStripMenuItem.Text" xml:space="preserve">
+    <value>Загрузить профиль</value>
+  </data>
+  <data name="SaveProfileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 20</value>
+  </data>
+  <data name="SaveProfileToolStripMenuItem.Text" xml:space="preserve">
+    <value>Сохранить профиль</value>
+  </data>
+  <data name="настройкиToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 20</value>
+  </data>
+  <data name="настройкиToolStripMenuItem.Text" xml:space="preserve">
+    <value>Настройки</value>
+  </data>
+  <data name="ProfileMenuStrip.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="ProfileMenuStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>770, 24</value>
+  </data>
+  <data name="ProfileMenuStrip.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ProfileMenuStrip.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
   <data name="&gt;&gt;ProfileMenuStrip.Name" xml:space="preserve">
     <value>ProfileMenuStrip</value>
   </data>
@@ -1226,51 +1256,6 @@
   </data>
   <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <metadata name="ProfileMenuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <data name="ProfileMenuStrip.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="ProfileMenuStrip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>770, 24</value>
-  </data>
-  <data name="ProfileMenuStrip.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="ProfileMenuStrip.Text" xml:space="preserve">
-    <value>menuStrip1</value>
-  </data>
-  <data name="&gt;&gt;ProfileMenuStrip.Name" xml:space="preserve">
-    <value>ProfileMenuStrip</value>
-  </data>
-  <data name="&gt;&gt;ProfileMenuStrip.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ProfileMenuStrip.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;ProfileMenuStrip.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="LoadProfileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 20</value>
-  </data>
-  <data name="LoadProfileToolStripMenuItem.Text" xml:space="preserve">
-    <value>Загрузить профиль</value>
-  </data>
-  <data name="SaveProfileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 20</value>
-  </data>
-  <data name="SaveProfileToolStripMenuItem.Text" xml:space="preserve">
-    <value>Сохранить профиль</value>
-  </data>
-  <data name="настройкиToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 20</value>
-  </data>
-  <data name="настройкиToolStripMenuItem.Text" xml:space="preserve">
-    <value>Настройки</value>
   </data>
   <data name="tabControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>

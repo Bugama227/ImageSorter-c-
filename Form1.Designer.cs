@@ -454,6 +454,7 @@
             resources.ApplyResources(this.tabPage2, "tabPage2");
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
+            this.tabPage2.SizeChanged += new System.EventHandler(this.tabPage2_SizeChanged);
             // 
             // menuStrip1
             // 
@@ -482,6 +483,7 @@
             resources.ApplyResources(this.tabPage1, "tabPage1");
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage1.SizeChanged += new System.EventHandler(this.tabPage1_SizeChanged);
             // 
             // ProfileMenuStrip
             // 
@@ -517,6 +519,7 @@
             resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tabControl1_KeyPress);
             // 
             // Form1
             // 
@@ -527,7 +530,6 @@
             this.MainMenuStrip = this.ProfileMenuStrip;
             this.Name = "Form1";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
-            this.SizeChanged += new System.EventHandler(this.Form1_SizeChanged);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form1_KeyPress);
             this.MainSplitContainer.Panel1.ResumeLayout(false);
             this.MainSplitContainer.Panel2.ResumeLayout(false);
